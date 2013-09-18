@@ -1,0 +1,10 @@
+{
+  "name": "cl-styles",
+  "description": "creativeLIVE styles",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/creativelive/cl-styles.git"
+  }
+}
