@@ -1,26 +1,36 @@
 // Layout
-.no-pad {
-  padding: 0px;
+.layout(5px, s);
+.layout(10px, m);
+.layout(15px, l);
+.layout(0px, none);
+
+.layout(@n, @size) {
+  .padding-@{size} {padding: @n}
+  .margin-@{size} {margin: @n}
+  .sidesLoop(1, @n);
 }
 
-.no-v-pad {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.sidesLoop(@i, @n) when (@i =< 4) {
+  .side(@i);
+  .sidesLoop(@i + 1, @n);
 }
 
-.no-h-pad {
-  padding-left: 0px;
-  padding-right: 0px;
+.side(@i) when (@i = 1) {
+  .padding-top-@{size} {padding-top: @n}
+  .margin-top-@{size} {margin-top: @n}
 }
 
-.s-pad {
-  padding: 5px;
+.side(@i) when (@i = 2) {
+  .padding-right-@{size} {padding-right: @n}
+  .margin-right-@{size} {margin-right: @n}
 }
 
-.m-pad {
-  padding: 10px;
+.side(@i) when (@i = 3) {
+  .padding-bottom-@{size} {padding-bottom: @n}
+  .margin-bottom-@{size} {margin-bottom: @n}
 }
 
-.l-pad {
-  padding: 15px;
+.side(@i) when (@i = 4) {
+  .padding-left-@{size} {padding-left: @n}
+  .margin-left-@{size} {margin-left: @n}
 }
