@@ -1,36 +1,166 @@
 // Layout
-.layout(5px, s);
-.layout(10px, m);
-.layout(15px, l);
-.layout(0px, none);
-
-.layout(@n, @size) {
-  .padding-@{size} {padding: @n}
-  .margin-@{size} {margin: @n}
-  .sidesLoop(1, @n);
+.padding-s {
+  padding: 5px;
+}
+.margin-s {
+  margin: 5px;
+}
+.padding-top-s {
+  padding-top: 5px;
+}
+.margin-top-s {
+  margin-top: 5px;
+}
+.padding-right-s {
+  padding-right: 5px;
+}
+.margin-right-s {
+  margin-right: 5px;
+}
+.padding-bottom-s {
+  padding-bottom: 5px;
+}
+.margin-bottom-s {
+  margin-bottom: 5px;
+}
+.padding-left-s {
+  padding-left: 5px;
+}
+.margin-left-s {
+  margin-left: 5px;
+}
+.padding-m {
+  padding: 10px;
+}
+.margin-m {
+  margin: 10px;
+}
+.padding-top-m {
+  padding-top: 10px;
+}
+.margin-top-m {
+  margin-top: 10px;
+}
+.padding-right-m {
+  padding-right: 10px;
+}
+.margin-right-m {
+  margin-right: 10px;
+}
+.padding-bottom-m {
+  padding-bottom: 10px;
+}
+.margin-bottom-m {
+  margin-bottom: 10px;
+}
+.padding-left-m {
+  padding-left: 10px;
+}
+.margin-left-m {
+  margin-left: 10px;
+}
+.padding-l {
+  padding: 15px;
+}
+.margin-l {
+  margin: 15px;
+}
+.padding-top-l {
+  padding-top: 15px;
+}
+.margin-top-l {
+  margin-top: 15px;
+}
+.padding-right-l {
+  padding-right: 15px;
+}
+.margin-right-l {
+  margin-right: 15px;
+}
+.padding-bottom-l {
+  padding-bottom: 15px;
+}
+.margin-bottom-l {
+  margin-bottom: 15px;
+}
+.padding-left-l {
+  padding-left: 15px;
+}
+.margin-left-l {
+  margin-left: 15px;
+}
+.padding-none {
+  padding: 0px;
+}
+.margin-none {
+  margin: 0px;
+}
+.padding-top-none {
+  padding-top: 0px;
+}
+.margin-top-none {
+  margin-top: 0px;
+}
+.padding-right-none {
+  padding-right: 0px;
+}
+.margin-right-none {
+  margin-right: 0px;
+}
+.padding-bottom-none {
+  padding-bottom: 0px;
+}
+.margin-bottom-none {
+  margin-bottom: 0px;
+}
+.padding-left-none {
+  padding-left: 0px;
+}
+.margin-left-none {
+  margin-left: 0px;
 }
 
-.sidesLoop(@i, @n) when (@i =< 4) {
-  .side(@i);
-  .sidesLoop(@i + 1, @n);
-}
+/*
 
-.side(@i) when (@i = 1) {
-  .padding-top-@{size} {padding-top: @n}
-  .margin-top-@{size} {margin-top: @n}
-}
+  The following code is used to generate the CSS classes you see 
+  above.  Due to a bug in Less which prevents generated classes 
+  from being extended, we must first generate the CSS and then 
+  paste that into our Less file.
 
-.side(@i) when (@i = 2) {
-  .padding-right-@{size} {padding-right: @n}
-  .margin-right-@{size} {margin-right: @n}
-}
+  .layout(5px, s);
+  .layout(10px, m);
+  .layout(15px, l);
+  .layout(0px, none);
 
-.side(@i) when (@i = 3) {
-  .padding-bottom-@{size} {padding-bottom: @n}
-  .margin-bottom-@{size} {margin-bottom: @n}
-}
+  .layout(@n, @size) {
+    .padding-@{size} {padding: @n}
+    .margin-@{size} {margin: @n}
+    .sidesLoop(1, @n);
+  }
 
-.side(@i) when (@i = 4) {
-  .padding-left-@{size} {padding-left: @n}
-  .margin-left-@{size} {margin-left: @n}
-}
+  .sidesLoop(@i, @n) when (@i =< 4) {
+    .side(@i);
+    .sidesLoop(@i + 1, @n);
+  }
+
+  .side(@i) when (@i = 1) {
+    .padding-top-@{size} {padding-top: @n}
+    .margin-top-@{size} {margin-top: @n}
+  }
+
+  .side(@i) when (@i = 2) {
+    .padding-right-@{size} {padding-right: @n}
+    .margin-right-@{size} {margin-right: @n}
+  }
+
+  .side(@i) when (@i = 3) {
+    .padding-bottom-@{size} {padding-bottom: @n}
+    .margin-bottom-@{size} {margin-bottom: @n}
+  }
+
+  .side(@i) when (@i = 4) {
+    .padding-left-@{size} {padding-left: @n}
+    .margin-left-@{size} {margin-left: @n}
+  }
+
+*/
