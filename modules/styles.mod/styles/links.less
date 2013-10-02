@@ -1,1 +1,11 @@
 // Links
+
+@link-color: darken(@brand-info, 20%);
+@link-hover-color: @brand-info-hover;
+
+a {
+  &:hover {
+    text-decoration: none;
+    color: @link-hover-color;
+  }
+}
