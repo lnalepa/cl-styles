@@ -120,12 +120,19 @@
   margin-left: 0px;
 }
 
+// Container should always max at 960px, instead f bootstrap default.
+@media (min-width: @screen-tablet) {
+  .container {
+    max-width: 960px;
+  }
+}
+
 
 /*
 
-  The following code is used to generate the CSS classes you see 
-  above.  Due to a bug in Less which prevents generated classes 
-  from being extended, we must first generate the CSS and then 
+  The following code is used to generate the CSS classes you see
+  above.  Due to a bug in Less which prevents generated classes
+  from being extended, we must first generate the CSS and then
   paste that into our Less file.
 
   .layout(5px, s);
