@@ -9,22 +9,22 @@
   &.btn-cta {
     background-color: @brand-info;
     #gradient .vertical(@brand-info-secondary,  @brand-info, 0%, 100%);
-    color: @white;  
+    color: @white;
   }
-  
+
   &.btn-primary {
     font-size: @font-size-l;
     width: 110px;
     height: 40px;
     text-align: center;
     &:extend(.pad-s);
-    margin: 2px 0 0 10px;    
+    margin: 2px 0 0 10px;
     background: @brand-primary;
     box-shadow: 0 1px 10px rgba(0,0,0,0.2);
     color: @white;
     font-weight: @font-weight-light;
     line-height: 30px;
-    
+
     &:hover {
       background-color: @brand-primary-hover;
     }
@@ -76,6 +76,19 @@
     cursor: default;
     background-color: #B0B0B0;
     color: white;
+  }
+
+  &.btn-old {
+    border-radius: 0;
+    background-color: @gray-dark;
+    color: @white;
+    font-size: @font-size-xs;
+    &:hover,
+    &:active,
+    &.active, {
+      background-color: @brand-primary;
+      color: @black;
+    }
   }
 
   // Special Buttons
