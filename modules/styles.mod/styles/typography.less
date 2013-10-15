@@ -14,11 +14,11 @@
 @font-weight-medium:      400;
 @font-weight-light:       200;
 
-.font-primary {
+.font-family-primary {
   font-family: @font-family-primary;
 }
 
-.font-secondary {
+.font-family-secondary {
   font-family: @font-family-secondary;
 }
 
@@ -104,4 +104,34 @@
 
 body {
   color: @gray;
+}
+
+@font-face {
+  font-family: 'mergepro-cl';
+  font-style: normal;
+  font-weight: 700;
+  src: local('mergepro-cl-bold'), url('assets/font/mergepro-cl-bold.eot');
+  src: local('mergepro-cl-bold'), url('assets/font/mergepro-cl-bold.eot?#iefix') format('embedded-opentype'),
+       local('mergepro-cl-bold'), url('assets/font/mergepro-cl-bold.woff') format('woff'),
+       local('mergepro-cl-bold'), url('assets/font/mergepro-cl-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mergepro-cl';
+  font-style: normal;
+  font-weight: 300;
+  src: local('mergepro-cl-light'), url('assets/font/mergepro-cl-light.eot');
+  src: local('mergepro-cl-light'), url('assets/font/mergepro-cl-light.eot?#iefix') format('embedded-opentype'),
+       local('mergepro-cl-light'), url('assets/font/mergepro-cl-light.woff') format('woff'),
+       local('mergepro-cl-light'), url('assets/font/mergepro-cl-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mergepro-cl';
+  font-style: normal;
+  font-weight: 400;
+  src: local('mergepro-cl'), url('assets/font/mergepro-cl.eot');
+  src: local('mergepro-cl'), url('assets/font/mergepro-cl.eot?#iefix') format('embedded-opentype'),
+       local('mergepro-cl'), url('assets/font/mergepro-cl.woff') format('woff'),
+       local('mergepro-cl'), url('assets/font/mergepro-cl.ttf') format('truetype');
 }
