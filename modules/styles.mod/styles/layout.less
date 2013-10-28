@@ -149,6 +149,7 @@
 .margin-left-none {
   margin-left: 0px;
 }
+
 // Margin center
 .margin-0-auto {
   margin: 0 auto;
@@ -185,10 +186,11 @@
   .layout(5px, s);
   .layout(10px, m);
   .layout(15px, l);
+  .layout(30px, xl);
   .layout(0px, none);
 
   .layout(@n, @size) {
-    .padding-@{size} {padding: @n}
+    .pad-@{size} {padding: @n}
     .margin-@{size} {margin: @n}
     .sidesLoop(1, @n);
   }
@@ -199,22 +201,22 @@
   }
 
   .side(@i) when (@i = 1) {
-    .padding-top-@{size} {padding-top: @n}
+    .pad-top-@{size} {padding-top: @n}
     .margin-top-@{size} {margin-top: @n}
   }
 
   .side(@i) when (@i = 2) {
-    .padding-right-@{size} {padding-right: @n}
+    .pad-right-@{size} {padding-right: @n}
     .margin-right-@{size} {margin-right: @n}
   }
 
   .side(@i) when (@i = 3) {
-    .padding-bottom-@{size} {padding-bottom: @n}
+    .pad-bottom-@{size} {padding-bottom: @n}
     .margin-bottom-@{size} {margin-bottom: @n}
   }
 
   .side(@i) when (@i = 4) {
-    .padding-left-@{size} {padding-left: @n}
+    .pad-left-@{size} {padding-left: @n}
     .margin-left-@{size} {margin-left: @n}
   }
 
