@@ -1,0 +1,226 @@
+// Layout
+
+body.cl-new {
+  .pad-s {
+    padding: 5px;
+  }
+  .margin-s {
+    margin: 5px;
+  }
+  .pad-top-s {
+    padding-top: 5px;
+  }
+  .margin-top-s {
+    margin-top: 5px;
+  }
+  .pad-right-s {
+    padding-right: 5px;
+  }
+  .margin-right-s {
+    margin-right: 5px;
+  }
+  .pad-bottom-s {
+    padding-bottom: 5px;
+  }
+  .margin-bottom-s {
+    margin-bottom: 5px;
+  }
+  .pad-left-s {
+    padding-left: 5px;
+  }
+  .margin-left-s {
+    margin-left: 5px;
+  }
+  .pad-m {
+    padding: 10px;
+  }
+  .margin-m {
+    margin: 10px;
+  }
+  .pad-top-m {
+    padding-top: 10px;
+  }
+  .margin-top-m {
+    margin-top: 10px;
+  }
+  .pad-right-m {
+    padding-right: 10px;
+  }
+  .margin-right-m {
+    margin-right: 10px;
+  }
+  .pad-bottom-m {
+    padding-bottom: 10px;
+  }
+  .margin-bottom-m {
+    margin-bottom: 10px;
+  }
+  .pad-left-m {
+    padding-left: 10px;
+  }
+  .margin-left-m {
+    margin-left: 10px;
+  }
+  .pad-l {
+    padding: 15px;
+  }
+  .margin-l {
+    margin: 15px;
+  }
+  .pad-top-l {
+    padding-top: 15px;
+  }
+  .margin-top-l {
+    margin-top: 15px;
+  }
+  .pad-right-l {
+    padding-right: 15px;
+  }
+  .margin-right-l {
+    margin-right: 15px;
+  }
+  .pad-bottom-l {
+    padding-bottom: 15px;
+  }
+  .margin-bottom-l {
+    margin-bottom: 15px;
+  }
+  .pad-left-l {
+    padding-left: 15px;
+  }
+  .margin-left-l {
+    margin-left: 15px;
+  }
+  .pad-xl {
+    padding: 30px;
+  }
+  .margin-xl {
+    margin: 30px;
+  }
+  .pad-top-xl {
+    padding-top: 30px;
+  }
+  .margin-top-xl {
+    margin-top: 30px;
+  }
+  .pad-right-xl {
+    padding-right: 30px;
+  }
+  .margin-right-xl {
+    margin-right: 30px;
+  }
+  .pad-bottom-xl {
+    padding-bottom: 30px;
+  }
+  .margin-bottom-xl {
+    margin-bottom: 30px;
+  }
+  .pad-left-xl {
+    padding-left: 30px;
+  }
+  .margin-left-xl {
+    margin-left: 30px;
+  }
+  .pad-none {
+    padding: 0px;
+  }
+  .margin-none {
+    margin: 0px;
+  }
+  .pad-top-none {
+    padding-top: 0px;
+  }
+  .margin-top-none {
+    margin-top: 0px;
+  }
+  .pad-right-none {
+    padding-right: 0px;
+  }
+  .margin-right-none {
+    margin-right: 0px;
+  }
+  .pad-bottom-none {
+    padding-bottom: 0px;
+  }
+  .margin-bottom-none {
+    margin-bottom: 0px;
+  }
+  .pad-left-none {
+    padding-left: 0px;
+  }
+  .margin-left-none {
+    margin-left: 0px;
+  }
+
+  // Margin center
+  .margin-0-auto {
+    margin: 0 auto;
+  }
+
+  // Position helpers
+  .static {
+    position: static;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
+
+  // Container should always max at 1005px, instead of bootstrap default.
+  @media (min-width: @screen-tablet) {
+    .container {
+      max-width: 1005px;
+    }
+  }  
+}
+
+/*
+
+  The following code is used to generate the CSS classes you see
+  above.  Due to a bug in Less which prevents generated classes
+  from being extended, we must first generate the CSS and then
+  paste that into our Less file.
+
+  .layout(5px, s);
+  .layout(10px, m);
+  .layout(15px, l);
+  .layout(30px, xl);
+  .layout(0px, none);
+
+  .layout(@n, @size) {
+    .pad-@{size} {padding: @n}
+    .margin-@{size} {margin: @n}
+    .sidesLoop(1, @n);
+  }
+
+  .sidesLoop(@i, @n) when (@i =< 4) {
+    .side(@i);
+    .sidesLoop(@i + 1, @n);
+  }
+
+  .side(@i) when (@i = 1) {
+    .pad-top-@{size} {padding-top: @n}
+    .margin-top-@{size} {margin-top: @n}
+  }
+
+  .side(@i) when (@i = 2) {
+    .pad-right-@{size} {padding-right: @n}
+    .margin-right-@{size} {margin-right: @n}
+  }
+
+  .side(@i) when (@i = 3) {
+    .pad-bottom-@{size} {padding-bottom: @n}
+    .margin-bottom-@{size} {margin-bottom: @n}
+  }
+
+  .side(@i) when (@i = 4) {
+    .pad-left-@{size} {padding-left: @n}
+    .margin-left-@{size} {margin-left: @n}
+  }
+
+*/
