@@ -10,6 +10,10 @@ button.primary {
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 22px;
+
+  &:hover {
+    background-color: @brand-highlight-hover;
+  }
 }
 
 button.dull {
@@ -19,14 +23,22 @@ button.dull {
   color: white;
   font-family: "Gotham SSm A";
   text-transform: uppercase;
+
+  &:hover {
+    background-color: @gray3-hover;
+  }
 }
 
 
 button.short {
- background-color: @brand-highlight;
- border: none;
- padding: 3px 10px 3px 10px;
- color: white;
- font-family: "Gotham SSm A";
- text-transform: uppercase; 
+  background-color: @brand-highlight;
+  border: none;
+  padding: 3px 10px 3px 10px;
+  color: white;
+  font-family: "Gotham SSm A";
+  text-transform: uppercase; 
+
+  &:hover {
+    background-color: @brand-highlight-hover;
+  }
 }
