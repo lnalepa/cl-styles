@@ -1,44 +1,49 @@
 // Buttons
 
-button.primary {
-  background-color: @brand-highlight;
-  border: none;
-  padding: 10px;
-  color: white;
+.cl-new .btn {
   font-family: @font-family-brand;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 22px;
+  font-weight: @font-weight-medium;
 
-  &:hover {
-    background-color: @brand-highlight-hover;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  margin: 0;
+
+  &.btn.btn-primary {
+    background-color: @brand-highlight;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 22px;
+    box-shadow: none;
+    &:hover {
+      background-color: @brand-highlight-hover;
+    }
   }
-}
 
-button.dull {
-  background-color: @gray3;
-  border: none;
-  padding: 3px 10px 3px 10px;
-  color: white;
-  font-family: @font-family-brand;
-  text-transform: uppercase;
+  &.btn.btn-dull {
+    background-color: @gray3;
+    padding: 3px 10px 3px 10px;
+    color: white;
+    text-transform: uppercase;
 
-  &:hover {
-    background-color: @gray3-hover;
+    &:hover {
+      background-color: @gray3-hover;
+    }
   }
-}
 
 
-button.short {
-  background-color: @brand-highlight;
-  border: none;
-  padding: 3px 10px 3px 10px;
-  color: white;
-  font-family: @font-family-brand;
-  text-transform: uppercase; 
+  &.btn.btn-short {
+    background-color: @brand-highlight;
+    padding: 3px 10px 3px 10px;
+    color: white;
+    text-transform: uppercase;
+    width: auto;
 
-  &:hover {
-    background-color: @brand-highlight-hover;
+    &:hover {
+      background-color: @brand-highlight-hover;
+    }
   }
 }
