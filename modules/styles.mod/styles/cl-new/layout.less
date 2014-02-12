@@ -176,7 +176,7 @@
   .container {
     max-width: 1005px;
   }
-}  
+}
 
 
 /*
@@ -224,3 +224,18 @@
   }
 
 */
+
+.auto-grid(@class, @columns, @gutter) when (@columns > 1) {
+  .@{class}:first-child:nth-last-child(@{columns}),
+  .@{class}:first-child:nth-last-child(@{columns}) ~ .@{class} {
+    width: 100% / @columns - @gutter;
+  }
+
+  .auto-grid(@class, @columns - 1, @gutter);
+}
+
+.auto-grid(@class, @columns, @gutter) when (@columns = 1) {
+  .@{class}:first-child:nth-last-child(1) {
+    width: 100% - @gutter;
+  }
+}
