@@ -24,7 +24,9 @@
 @gray7-hover:   lighten(@gray7, 10%);
 
 // category specific colors
-@photo-color:         #193b4c;
+
+@photography-color:   #193b4c;
+@photo-color:         @photography-color; // Deprecated, use @photography-color
 @design-color:        #b11b56;
 @audio-color:         #df7915;
 @maker-color:         #1f9b97;
@@ -72,3 +74,35 @@
   color: @gray7;
 }
 
+
+.vertical-bg-photography {
+  background-color: @photography-color;
+}
+.vertical-bg-design {
+  background-color: @design-color;
+}
+.vertical-bg-audio {
+  background-color: @audio-color;
+}
+.vertical-bg-maker {
+  background-color: @maker-color;
+}
+.vertical-bg-business {
+  background-color: @business-color;
+}
+
+.vertical-bd-photography {
+  border-color: @photography-color;
+}
+.vertical-bd-design {
+  border-color: @design-color;
+}
+.vertical-bd-audio {
+  border-color: @audio-color;
+}
+.vertical-bd-maker {
+  border-color: @maker-color;
+}
+.vertical-bd-business {
+  border-color: @business-color;
+}
