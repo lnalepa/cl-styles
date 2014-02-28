@@ -12,6 +12,7 @@
 @gray4: #C1C1C1;
 @gray5: #D9D9D9;
 @gray6: #E6E6E6;
+@gray7: #f1f1f1;
 
 @gray1-hover:   lighten(@gray1, 10%);
 @gray2-hover:   lighten(@gray2, 10%);
@@ -19,6 +20,16 @@
 @gray4-hover:   lighten(@gray4, 10%);
 @gray5-hover:   lighten(@gray5, 10%);
 @gray6-hover:   lighten(@gray6, 10%);
+
+// category specific colors
+
+@photography-color:   #193b4c;
+@photo-color:         @photography-color; // Deprecated, use @photography-color
+@design-color:        #b11b56;
+@audio-color:         #c9451a;
+@maker-color:         #1f9b97;
+@business-color:      #619020;
+@other-color:         #4a4d5b;
 
 .brand-highlight {
   color: @brand-highlight;
@@ -45,4 +56,36 @@
 }
 .gray6 {
   color: @gray6;
+}
+
+.vertical-bg-photography {
+  background-color: @photography-color;
+}
+.vertical-bg-design {
+  background-color: @design-color;
+}
+.vertical-bg-audio {
+  background-color: @audio-color;
+}
+.vertical-bg-maker {
+  background-color: @maker-color;
+}
+.vertical-bg-business {
+  background-color: @business-color;
+}
+
+.vertical-bd-photography {
+  border-color: @photography-color;
+}
+.vertical-bd-design {
+  border-color: @design-color;
+}
+.vertical-bd-audio {
+  border-color: @audio-color;
+}
+.vertical-bd-maker {
+  border-color: @maker-color;
+}
+.vertical-bd-business {
+  border-color: @business-color;
 }
