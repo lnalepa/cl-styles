@@ -6,5 +6,9 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/creativelive/cl-styles.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-webfont": "~0.3.3"
   }
 }
