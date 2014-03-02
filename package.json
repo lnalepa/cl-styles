@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-webfont": "~0.3.3"
+    "grunt-webfont": "~0.2.2"
   }
 }
