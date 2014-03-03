@@ -1,11 +1,13 @@
 // Typography
 @font-family-brand: 'Gotham SSm A', 'Gotham SSm B', Helvetica;
+@font-family-icon: "icon-cl";
+@font-family-cursive: 'Sacramento', cursive;
 
 .cl-new {
-  
+
   h1 {
-    font-family: @font-family-brand; 
-    font-weight: 300; 
+    font-family: @font-family-brand;
+    font-weight: 300;
     font-style: normal;
     font-size: 40px;
     color: black;
@@ -15,8 +17,8 @@
   }
 
   h2 {
-    font-family: @font-family-brand; 
-    font-weight: 300; 
+    font-family: @font-family-brand;
+    font-weight: 300;
     font-style: normal;
     font-size: 24px;
     color: black;
@@ -26,8 +28,8 @@
   }
 
   h3 {
-    font-family: @font-family-brand; 
-    font-weight: 400; 
+    font-family: @font-family-brand;
+    font-weight: 400;
     font-style: normal;
     font-size: 24px;
     color: black;
@@ -35,8 +37,8 @@
   }
 
   h4 {
-    font-family: @font-family-brand; 
-    font-weight: 500; 
+    font-family: @font-family-brand;
+    font-weight: 500;
     font-style: normal;
     font-size: 18px;
     color: black;
@@ -44,8 +46,8 @@
   }
 
   p {
-    font-family: @font-family-brand; 
-    font-weight: 300; 
+    font-family: @font-family-brand;
+    font-weight: 300;
     font-style: normal;
     font-size: 14px;
     letter-spacing: 0px;
@@ -61,15 +63,15 @@
 
 
   div {
-    font-family: @font-family-brand; 
-    font-weight: 300; 
+    font-family: @font-family-brand;
+    font-weight: 300;
     font-style: normal;
     letter-spacing: 0px;
   }
 
   .info1 {
-    font-family: @font-family-brand; 
-    font-weight: 300; 
+    font-family: @font-family-brand;
+    font-weight: 300;
     font-style: normal;
     font-size: 24px;
     color: black;
@@ -78,8 +80,8 @@
   }
 
   .info2 {
-    font-family: @font-family-brand; 
-    font-weight: 400; 
+    font-family: @font-family-brand;
+    font-weight: 400;
     font-style: normal;
     font-size: 18px;
     color: black;
@@ -87,8 +89,8 @@
   }
 
   .cta {
-    font-family: @font-family-brand; 
-    font-weight: 500; 
+    font-family: @font-family-brand;
+    font-weight: 500;
     font-style: normal;
     font-size: 18px;
     color: white;
@@ -96,8 +98,8 @@
   }
 
   .cta2 {
-    font-family: @font-family-brand; 
-    font-weight: 500; 
+    font-family: @font-family-brand;
+    font-weight: 500;
     font-style: normal;
     font-size: 12px;
     color: white;
@@ -105,8 +107,8 @@
   }
 
   .smalltext {
-    font-family: @font-family-brand; 
-    font-weight: 500; 
+    font-family: @font-family-brand;
+    font-weight: 500;
     font-style: normal;
     font-size: 12px;
     color: black;
@@ -114,8 +116,8 @@
   }
 
   .tinytext {
-    font-family: @font-family-brand; 
-    font-weight: 300; 
+    font-family: @font-family-brand;
+    font-weight: 300;
     font-style: normal;
     font-size: 10px;
     color: black;
@@ -126,4 +128,17 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+// Import Sacramento Font.
+@import url(http://fonts.googleapis.com/css?family=Sacramento);
+
+@font-face {
+  font-family: 'icon-cl';
+  font-style: normal;
+  font-weight: 300;
+  src: local('icon-cl'), url('../../font/styles/cl-font-collection.eot');
+  src: local('icon-cl'), url('../../font/styles/cl-font-collection.eot?#iefix') format('embedded-opentype'),
+       local('icon-cl'), url('../../font/styles/cl-font-collection.woff') format('woff'),
+       local('icon-cl'), url('../../font/styles/cl-font-collection.ttf') format('truetype');
 }
