@@ -1,0 +1,97 @@
+/*
+  Icon Font: cl-font-collection
+*/
+
+@font-face {
+  font-family: "cl-font-collection";
+  src: url("../fonts/cl-font-collection_d8a0ec4b28fed5338c05e8dab283f120.eot");
+  src: url("../fonts/cl-font-collection_d8a0ec4b28fed5338c05e8dab283f120.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/cl-font-collection_d8a0ec4b28fed5338c05e8dab283f120.woff") format("woff"),
+       url("../fonts/cl-font-collection_d8a0ec4b28fed5338c05e8dab283f120.ttf") format("truetype"),
+       url("../fonts/cl-font-collection_d8a0ec4b28fed5338c05e8dab283f120.svg#cl-font-collection") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "cl-font-collection";
+    src: url("../fonts/cl-font-collection_d8a0ec4b28fed5338c05e8dab283f120.svg#cl-font-collection") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.cl-icon-audio:before,
+.cl-icon-block-a:before,
+.cl-icon-block-c:before,
+.cl-icon-block-e:before,
+.cl-icon-block-i:before,
+.cl-icon-block-l:before,
+.cl-icon-block-r:before,
+.cl-icon-block-t:before,
+.cl-icon-block-v:before,
+.cl-icon-business:before,
+.cl-icon-calendar-add:before,
+.cl-icon-calendar-date:before,
+.cl-icon-calendar-plus:before,
+.cl-icon-channels-tabs:before,
+.cl-icon-clock:before,
+.cl-icon-design:before,
+.cl-icon-education:before,
+.cl-icon-logo-block-stack:before,
+.cl-icon-logo-outline-stack:before,
+.cl-icon-maker:before,
+.cl-icon-outline-a:before,
+.cl-icon-outline-c:before,
+.cl-icon-outline-e:before,
+.cl-icon-outline-i:before,
+.cl-icon-outline-l:before,
+.cl-icon-outline-r:before,
+.cl-icon-outline-t:before,
+.cl-icon-outline-v:before,
+.cl-icon-photography:before {
+  display: inline-block;
+  font-family: "cl-font-collection";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.cl-icon-audio:before { content: "\f158"; }
+.cl-icon-block-a:before { content: "\f157"; }
+.cl-icon-block-c:before { content: "\f159"; }
+.cl-icon-block-e:before { content: "\f15a"; }
+.cl-icon-block-i:before { content: "\f15b"; }
+.cl-icon-block-l:before { content: "\f15c"; }
+.cl-icon-block-r:before { content: "\f15d"; }
+.cl-icon-block-t:before { content: "\f15e"; }
+.cl-icon-block-v:before { content: "\f15f"; }
+.cl-icon-business:before { content: "\f160"; }
+.cl-icon-calendar-add:before { content: "\f161"; }
+.cl-icon-calendar-date:before { content: "\f162"; }
+.cl-icon-calendar-plus:before { content: "\f163"; }
+.cl-icon-channels-tabs:before { content: "\f164"; }
+.cl-icon-clock:before { content: "\f165"; }
+.cl-icon-design:before { content: "\f166"; }
+.cl-icon-education:before { content: "\f167"; }
+.cl-icon-logo-block-stack:before { content: "\f168"; }
+.cl-icon-logo-outline-stack:before { content: "\f169"; }
+.cl-icon-maker:before { content: "\f16a"; }
+.cl-icon-outline-a:before { content: "\f16b"; }
+.cl-icon-outline-c:before { content: "\f16c"; }
+.cl-icon-outline-e:before { content: "\f16d"; }
+.cl-icon-outline-i:before { content: "\f16e"; }
+.cl-icon-outline-l:before { content: "\f16f"; }
+.cl-icon-outline-r:before { content: "\f170"; }
+.cl-icon-outline-t:before { content: "\f171"; }
+.cl-icon-outline-v:before { content: "\f172"; }
+.cl-icon-photography:before { content: "\f173"; }
