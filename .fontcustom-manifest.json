@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "e03f249220226e43d17a190c1f481bba864c1b5ddb574dc9cdeb509362cc228b",
-    "current": "e03f249220226e43d17a190c1f481bba864c1b5ddb574dc9cdeb509362cc228b"
+    "previous": "0f87300efb69b445a763baaeb01d2a9683caa9bb1bc2fc6384ac5c3c70d54121",
+    "current": "0f87300efb69b445a763baaeb01d2a9683caa9bb1bc2fc6384ac5c3c70d54121"
   },
   "fonts": [
     "modules/styles.mod/assets/font/cl-font-collection.ttf",
@@ -152,7 +152,7 @@
     }
   },
   "options": {
-    "autowidth": true,
+    "autowidth": false,
     "config": "fontcustom.yml",
     "css_selector": ".cl-icon-{{glyph}}",
     "debug": true,

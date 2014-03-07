@@ -7,7 +7,7 @@
 font_name: cl-font-collection
 css_selector: .cl-icon-{{glyph}}
 preprocessor_path: ""
-autowidth: true
+autowidth: false
 no_hash: true
 force: true
 debug: true
