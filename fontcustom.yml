@@ -29,8 +29,8 @@ input:
 
 output:
   fonts: modules/styles.mod/assets/font                          # required
-  css: modules/styles.mod/styles/cl-new
-  preview: modules/styles.mod/styles/cl-new
+  css: fontcustom-output/styles
+  preview: fontcustom-output/styleguide
 
 
 # --------------------------------------------------------------------------- #
@@ -41,5 +41,5 @@ output:
 # --------------------------------------------------------------------------- #
 
 templates:
- - css
- - preview
+  - css
+  - preview

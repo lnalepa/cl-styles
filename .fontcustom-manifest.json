@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "8b639795b9fc873bb2eed0bbf55f9605a42e550e5c23e48d8227a0b496638e86",
-    "current": "8b639795b9fc873bb2eed0bbf55f9605a42e550e5c23e48d8227a0b496638e86"
+    "previous": "e03f249220226e43d17a190c1f481bba864c1b5ddb574dc9cdeb509362cc228b",
+    "current": "e03f249220226e43d17a190c1f481bba864c1b5ddb574dc9cdeb509362cc228b"
   },
   "fonts": [
     "modules/styles.mod/assets/font/cl-font-collection.ttf",
@@ -164,9 +164,9 @@
     },
     "no_hash": true,
     "output": {
-      "css": "modules/styles.mod/styles/cl-new",
+      "css": "fontcustom-output/styles",
       "fonts": "modules/styles.mod/assets/font",
-      "preview": "modules/styles.mod/styles/cl-new"
+      "preview": "fontcustom-output/styleguide"
     },
     "preprocessor_path": "",
     "quiet": false,
@@ -176,7 +176,7 @@
     ]
   },
   "templates": [
-    "modules/styles.mod/styles/cl-new/cl-font-collection.css",
-    "modules/styles.mod/styles/cl-new/cl-font-collection-preview.html"
+    "cl-font-collection-output/styles/fontcustom.css",
+    "cl-font-collection-output/styleguide/fontcustom-preview.html"
   ]
 }
