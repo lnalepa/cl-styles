@@ -1,14 +1,10 @@
 {
   "name": "cl-styles.rind",
   "description": "creativeLIVE styles",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": true,
   "repository": {
     "type": "git",
     "url": "http://github.com/creativelive/cl-styles.git"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-webfont": "~0.2.2"
   }
 }
