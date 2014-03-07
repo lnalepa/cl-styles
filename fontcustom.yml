@@ -8,8 +8,8 @@ font_name: cl-font-collection
 css_selector: .cl-icon-{{glyph}}
 preprocessor_path: ""
 autowidth: true
-no_hash: false
-force: false
+no_hash: true
+force: true
 debug: true
 quiet: false
 
@@ -19,8 +19,8 @@ quiet: false
 # --------------------------------------------------------------------------- #
 
 input:
-  vectors: modules/styles.mod/assets/icons         # required
-  #templates: app/assets/fonts/fontcustom/templates
+  vectors: modules/styles.mod/assets/icons        # required
+  # templates: app/assets/fonts/fontcustom/templates
 
 
 # --------------------------------------------------------------------------- #
@@ -28,10 +28,9 @@ input:
 # --------------------------------------------------------------------------- #
 
 output:
-  fonts: cl-font-collection/fonts                              # required
-  css: cl-font-collection/styles
-  preview: cl-font-collection/styleguide
-  #my-custom-template.yml: path/to/template/output
+  fonts: modules/styles.mod/assets/font                          # required
+  css: modules/styles.mod/styles/cl-new
+  preview: modules/styles.mod/styles/cl-new
 
 
 # --------------------------------------------------------------------------- #
@@ -44,4 +43,3 @@ output:
 templates:
  - css
  - preview
- #- my-custom-template.yml
