@@ -5,7 +5,7 @@ Contains creativeLIVE Less, and is used as a submodule in the Style Guide, and a
 
 
 
-### cl-icon-font
+### Compiling cl-icon-font
 
 If you wish to add a new glyph to the icon font used in creativeLIVE you need to get up an running with `fontcustom`. In order to install font custom:
 
