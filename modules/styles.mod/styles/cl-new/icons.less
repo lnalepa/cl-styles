@@ -1,59 +1,173 @@
-// Icons
+// Icon Font: cl-font-collection
 
-// The icons styles come from Font Awesome and have not necessitated additional code
-
-i.cl-icon-font {
+.cl-icon-font {
   display: inline-block;
-  font-family: @font-family-icon;
+  font-family: "cl-font-collection";
   font-style: normal;
   font-weight: normal;
+  font-variant: normal;
   line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
   text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  &.cl-icon-business:before {
-    content: '9';
-  }
-  &.cl-icon-photo:before,
-  &.cl-icon-photography:before {
-    content: '5';
-  }
+  font-smoothing: antialiased;
+
+  // Icons
+
   &.cl-icon-audio:before {
-    content: '7';
+    content: "\f1a0";
   }
-  &.cl-icon-design:before {
-    content: '6';
+
+  &.cl-icon-block-a:before {
+    content: "\41";
   }
-  &.cl-icon-maker:before {
-    content: '8';
+
+  &.cl-icon-block-c:before {
+    content: "\43";
   }
-  &.cl-icon-logo-long:before {
-    content: '1';
+
+  &.cl-icon-block-e:before {
+    content: "\45";
   }
-  &.cl-icon-logo-block-dark:before {
-    content: '2';
+
+  &.cl-icon-block-i:before {
+    content: "\49";
   }
-  &.cl-icon-logo-block-light:before {
-    content: '4';
+
+  &.cl-icon-block-l:before {
+    content: "\4c";
   }
-  &.cl-icon-logo-block-empty:before {
-    content: '3';
+
+  &.cl-icon-block-logo-horizontal:before {
+    content: "\f1c3";
   }
-  &.cl-icon-clock:before {
-    content: '!';
+
+  &.cl-icon-block-logo-vertical:before {
+    content: "\f1c4";
   }
-  &.cl-icon-calendar:before {
-    content: '@';
+
+  &.cl-icon-block-quotes-end:before {
+    content: "\f1b4";
   }
-  &.cl-icon-library:before {
-    content: '#';
+
+  &.cl-icon-block-quotes-start:before {
+    content: "\f1b5";
   }
-  &.cl-icon-torch:before {
-    content: '$';
+
+  &.cl-icon-block-r:before {
+    content: "\52";
   }
-  &.cl-icon-calendar-plus:before {
-    content: '=';
+
+  &.cl-icon-block-t:before {
+    content: "\54";
   }
+
+  &.cl-icon-block-v:before {
+    content: "\56";
+  }
+
+  &.cl-icon-business:before {
+    content: "\f1b6";
+  }
+
   &.cl-icon-calendar-add:before {
-    content: '+';
+    content: "\f1b7";
+  }
+
+  &.cl-icon-calendar-date:before {
+    content: "\f1b8";
+  }
+
+  &.cl-icon-calendar-plus:before {
+    content: "\f1b9";
+  }
+
+  &.cl-icon-clock:before {
+    content: "\f1ba";
+  }
+
+  &.cl-icon-design:before {
+    content: "\f1bb";
+  }
+
+  &.cl-icon-education:before {
+    content: "\f1bc";
+  }
+
+  &.cl-icon-five-tabs:before {
+    content: "\f1bd";
+  }
+
+  &.cl-icon-maker:before {
+    content: "\f1be";
+  }
+
+  &.cl-icon-outline-a:before {
+    content: "\61";
+  }
+
+  &.cl-icon-outline-c:before {
+    content: "\63";
+  }
+
+  &.cl-icon-outline-e:before {
+    content: "\65";
+  }
+
+  &.cl-icon-outline-i:before {
+    content: "\69";
+  }
+
+  &.cl-icon-outline-l:before {
+    content: "\6c";
+  }
+
+  &.cl-icon-outline-logo-vertical:before {
+    content: "\f1c5";
+  }
+
+  &.cl-icon-outline-quotes-end:before {
+    content: "\f1bf";
+  }
+
+  &.cl-icon-outline-quotes-start:before {
+    content: "\f1c0";
+  }
+
+  &.cl-icon-outline-r:before {
+    content: "\72";
+  }
+
+  &.cl-icon-outline-t:before {
+    content: "\74";
+  }
+
+  &.cl-icon-outline-v:before {
+    content: "\76";
+  }
+
+  &.cl-icon-photography:before,
+  &.cl-icon-photo:before {
+    content: "\f1c1";
+  }
+}
+
+@font-face {
+  font-family: "cl-font-collection";
+  src: url("../../font/styles/cl-font-collection.eot");
+  src: url("../../font/styles/cl-font-collection.eot?#iefix") format("embedded-opentype"),
+      url("../../font/styles/cl-font-collection.woff") format("woff"),
+      url("../../font/styles/cl-font-collection.ttf") format("truetype"),
+      url("../../font/styles/cl-font-collection.svg#cl-font-collection") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "cl-font-collection";
+    src: url("../../font/styles/cl-font-collection.svg#cl-font-collection") format("svg");
   }
 }
