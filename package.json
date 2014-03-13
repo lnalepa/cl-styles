@@ -11,6 +11,7 @@
     "test": "grunt lesslint"
   },
   "dependencies": {
-    "grunt-lesslint": "~1.0.0"
+    "grunt-lesslint": "~1.0.0",
+    "grunt": "~0.4.4"
   }
 }
