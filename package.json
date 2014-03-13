@@ -10,7 +10,7 @@
   "scripts": {
     "test": "grunt lesslint"
   },
-  "dependencies": {
+  "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-lesslint": "~1.0.0"
   }
