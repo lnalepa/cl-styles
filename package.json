@@ -8,7 +8,7 @@
     "url": "http://github.com/creativelive/cl-styles.git"
   },
   "scripts": {
-    "test": "grunt lesslint"
+    "test": "./node_modules/grunt-cli/bin/grunt lesslint"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
