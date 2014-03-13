@@ -6,5 +6,8 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/creativelive/cl-styles.git"
+  },
+  "dependencies": {
+    "grunt-lesslint": "~1.0.0"
   }
 }
