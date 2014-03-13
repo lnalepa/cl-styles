@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.4",
-    "grunt-lesslint": "~1.0.0"
+    "grunt-lesslint": "~1.0.0",
+    "grunt-cli": "~0.1.13"
   }
 }
