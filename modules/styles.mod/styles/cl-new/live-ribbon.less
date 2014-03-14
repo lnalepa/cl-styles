@@ -1,0 +1,26 @@
+.live-now-ribbon {
+  background-color: @white;
+  color: @gray2;
+  display: block;
+  font-family: @font-family-brand;
+  font-size: 9px;
+  font-weight: normal;
+  height: 16px;
+  letter-spacing: .1em;
+  line-height: 14px;
+  padding: 2px 5px 0px 5px;
+  position: absolute;
+  text-transform: uppercase;
+  top: -5px;
+  left: -5px;
+  &:before {
+    left: -1px;
+    border-width: 0.75em 0 0 0.75em;
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: @gray2 transparent transparent transparent;
+    bottom: -0.70em;
+  }
+}
