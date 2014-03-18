@@ -1,7 +1,7 @@
 {
   "name": "cl-styles.rind",
   "description": "creativeLIVE styles",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "private": true,
   "repository": {
     "type": "git",
