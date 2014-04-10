@@ -1,0 +1,96 @@
+.course-tile-wrapper {
+  &:extend(.margin-bottom-m, .font-primary);
+
+  .course-tile {
+    position: relative;
+    background-color: @gray-lightest;
+    &:extend(.font-size-xs, .font-primary, .font-weight-regular);
+
+    a, a:hover {
+      color: @gray-dark;
+    }
+
+    .enroll-button {
+      top: 4px;
+      right: 5px;
+      &:extend(.absolute);
+    }
+
+    .btn.btn-green {
+      box-shadow: none;
+      color: @white;
+    }
+
+    &.future {
+      background-color: @white;
+    }
+
+    img {
+      width: 100%;
+      transition: opacity .2s;
+      .backface-visibility(hidden);
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .course-tile-top {
+      height: 31px;
+    }
+
+    .course-dates {
+      margin-top: 4px;
+      .margin-left-s;
+    }
+
+    .course-tile-info {
+      height: 80px;
+      &:extend(.font-size-xs, .font-weight-regular, .pad-m);
+    }
+
+    .course-tile-title {
+      line-height: 14px;
+      font-weight: 500;
+      &:extend(.font-size-s);
+    }
+
+    .course-tile-instructors {
+      margin-top: 6px;
+      color: #999;
+      &:extend(.font-size-xs, .margin-top-s);
+      span {
+        text-transform: uppercase;
+      }
+    }
+
+    .ribbon-tiny-wrapper {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .ribbon-tiny {
+      font-size:11px;
+      line-height:14px;
+      font-family:@font-family-primary;
+      font-weight:@font-weight-heavy;
+      color: @white;
+      text-align: center;
+      text-transform:uppercase;
+      .rotate(-45deg);
+      position: relative;
+      padding: 3px 0;
+      left: -40px;
+      top: 20px;
+      width: 150px;
+      background-color: @brand-primary;
+
+      .present & {
+        padding: 10px 0;
+      }
+    }
+  }
+}
