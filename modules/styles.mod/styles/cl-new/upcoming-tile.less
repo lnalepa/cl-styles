@@ -1,0 +1,132 @@
+.upcoming-tile {
+  background: @white;
+  cursor: pointer;
+  .clearfix;
+  transition: box-shadow 0.3s;
+  &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .category-badge {
+    width: 60px;
+    height: 61px;
+    background-color: @other-color;
+    text-align: center;
+    padding-top: 13px;
+    float: left;
+    &:extend(.pad-s);
+    .cl-icon-font {
+      color: @white;
+      font-size: 36px;
+    }
+  }
+
+  .upcoming-date {
+    width: 125px;
+    color: @other-color;
+    padding-left: 15px;
+    float: left;
+    &:extend(.pad-s);
+    .upcoming-month {
+      font-weight: 200;
+      text-transform: uppercase;
+      &:extend(.pad-top-s, .font-size-xs);
+    }
+    .upcoming-day {
+      font-weight: 500;
+      line-height: 27px;
+      &:extend(.font-size-l);
+    }
+  }
+
+  .upcoming-title {
+    color: @black;
+    width: 65%;
+    float: left;
+    &:extend(.margin-top-s, .pad-top-s);
+    .upcoming-short-title {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: 400;
+    }
+    .upcoming-instructors {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      &:extend(.font-size-xs);
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .upcoming-action {
+    width: 50px;
+    float: right;
+    margin-top: 19px;
+    i {
+      font-size: 24px;
+    }
+  }
+
+
+  // Color specifications
+  &.photography {
+    .category-badge {
+      background-color: @photo-color;
+    }
+    &:hover .category-badge {
+      background-color: @photo-color2;
+    }
+    .upcoming-date {
+      color: @photo-color;
+    }
+  }
+  &.audio {
+    .category-badge {
+      background-color: @audio-color;
+    }
+    &:hover .category-badge {
+      background-color: @audio-color2;
+    }
+    .upcoming-date {
+      color: @audio-color;
+    }
+  }
+  &.design {
+    .category-badge {
+      background-color: @design-color;
+    }
+    &:hover .category-badge {
+      background-color: @design-color2;
+    }
+    .upcoming-date {
+      color: @design-color;
+    }
+  }
+  &.maker {
+    .category-badge {
+      background-color: @maker-color;
+    }
+    &:hover .category-badge {
+      background-color: @maker-color2;
+    }
+    .upcoming-date {
+      color: @maker-color;
+    }
+  }
+  &.business {
+    .category-badge {
+      background-color: @business-color;
+    }
+    &:hover .category-badge {
+      background-color: @business-color2;
+    }
+    .upcoming-date {
+      color: @business-color;
+    }
+  }
+}
