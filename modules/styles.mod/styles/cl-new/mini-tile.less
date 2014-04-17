@@ -1,0 +1,41 @@
+.mini-tile-inner {
+  &:extend(.pad-s);
+  display: inline-block;
+  color: @black;
+  background-color: @white;
+  width: 33.333%;
+  .clearfix;
+
+  a, a:hover {
+    color: black;
+  }
+
+  .mini-tile-thumbnail {
+    display: inline-block;
+    float: left;
+  }
+
+  .mini-tile-description {
+    &:extend(.margin-left-s, .font-size-xs);
+    display: inline-block;
+    float: left;
+    width: 40%;
+    .mini-tile-title {
+      font-weight: 500;
+    }
+
+    .mini-tile-instructors {
+      color: @gray3;
+      &:extend(.font-size-xs, .margin-left-s, .list-unstyled);
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+  &:hover {
+    background-color: @gray5;
+    cursor: pointer;
+  }
+}

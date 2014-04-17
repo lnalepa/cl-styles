@@ -5,10 +5,6 @@
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
 
-  &:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  }
-
   .category-badge {
     width: 60px;
     height: 61px;
@@ -64,14 +60,27 @@
   }
 
   .upcoming-action {
-    width: 50px;
-    float: right;
-    margin-top: 19px;
+    button.btn.btn-primary {
+      width: 50px;
+      float: right;
+      margin-top: 8px;
+      margin-right: 8px;
+      background-color: transparent;
+      i {
+        color: @gray5;
+      }
+    }
+
     i {
       font-size: 24px;
     }
-  }
 
+    .course-enrolled-unset {
+      float: right;
+      margin-top: 19px;
+      margin-right: 22px;
+    }
+  }
 
   // Color specifications
   &.photography {
@@ -127,6 +136,19 @@
     }
     .upcoming-date {
       color: @business-color;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+    .upcoming-action {
+      button.btn.btn-primary {
+        background-color: @gray7;
+        i {
+          color: @brand-highlight-hover;
+        }
+      }
     }
   }
 }
