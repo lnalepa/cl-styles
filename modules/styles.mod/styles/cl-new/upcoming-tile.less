@@ -5,17 +5,13 @@
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
 
+
   .category-badge {
-    width: 60px;
     height: 61px;
-    text-align: center;
-    padding-top: 13px;
+    padding-top: 10px 15px;
     float: left;
-    &:extend(.pad-s);
-    .cl-icon-font {
-      color: @white;
-      font-size: 36px;
-    }
+    color: @white;
+    &:extend(.pad-s, .font-size-xl, .text-center);
   }
 
   .upcoming-date {
@@ -67,6 +63,13 @@
       float: right;
       margin-top: 19px;
       margin-right: 22px;
+    }
+    &:hover {
+      color: @brand-highlight-hover;
+    }
+
+    :hover & {
+      color: @brand-highlight;
     }
   }
 
@@ -129,14 +132,5 @@
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-
-    .upcoming-action {
-      button.btn.btn-primary {
-        background-color: @gray7;
-        i {
-          color: @brand-highlight-hover;
-        }
-      }
-    }
   }
 }
