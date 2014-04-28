@@ -4,7 +4,9 @@
   .clearfix;
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
-
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
 
   .category-badge {
     height: 61px;
@@ -130,7 +132,10 @@
     }
   }
 
-  &:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+  .no-category-icon & {
+    .category-badge i {
+      display: none;
+    }
   }
 }
