@@ -4,9 +4,7 @@
   .clearfix;
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
-  &:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  }
+
 
   .category-badge {
     height: 61px;
@@ -78,10 +76,6 @@
     &:hover {
       color: @brand-highlight-hover;
     }
-
-    :hover & {
-      color: @brand-highlight;
-    }
   }
 
   // Color specifications
@@ -145,6 +139,13 @@
   .no-category-icon & {
     .category-badge i {
       display: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    .upcoming-action {
+      color: @brand-highlight;
     }
   }
 }
