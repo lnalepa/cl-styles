@@ -1,9 +1,9 @@
 .mini-tile-inner {
-  &:extend(.pad-s);
+  &:extend(.pad-m);
   display: inline-block;
+  height: 100px;
   color: @black;
   background-color: @white;
-  width: 33.333%;
   position: relative;
   .clearfix;
 
@@ -12,22 +12,26 @@
   }
 
   .mini-tile-thumbnail {
-    display: inline-block;
     float: left;
+    display: inline-block;
   }
 
   .mini-tile-description {
     &:extend(.margin-left-s, .font-size-xs);
-    display: inline-block;
     float: left;
-    width: 40%;
+    display: inline-block;
+    width: 50%;
+    margin-left: 2%;
+    line-height: 1;
+
     .mini-tile-title {
       font-weight: 500;
     }
 
     .mini-tile-instructors {
       color: @gray3;
-      &:extend(.font-size-xs, .margin-left-s, .list-unstyled);
+      &:extend(.font-size-xs, .list-unstyled, .margin-top-s);
+
       span {
         text-transform: uppercase;
       }
@@ -37,17 +41,28 @@
   .star-button {
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 40px;
     font-size: 20px;
-    color: @gray2;
+    color: @gray4;
+    .starred-icon {
+      display: none;
+    }
 
     .starred-message {
       font-size: @font-size-xs;
     }
+
+    &:hover {
+      color: @brand-highlight;
+    }
   }
 
   &:hover {
-    background-color: @gray5;
+    background-color: @gray6;
     cursor: pointer;
+
+    .starred-icon {
+      display: block;
+    }
   }
 }
