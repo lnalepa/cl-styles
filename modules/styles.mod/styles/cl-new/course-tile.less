@@ -97,13 +97,27 @@
       position: relative;
     }
 
-    .star-button, .unstar-button {
+    .star-button,
+    .unstar-button {
       position: absolute;
       bottom: 0;
       right: 0;
-      font-size: 24px;
-      text-shadow: 0 0 8px @black;
-      color: @brand-highlight;
+      background-color: @white;
+      color: @gray3;
+      padding: 10px;
+      i {
+        font-size: @font-size-l;
+      }
+      &:hover {
+        color: @brand-highlight;
+      }
+    }
+
+    .unstar-button {
+      cursor: default;
+      i {
+        color: @brand-highlight;
+      }
     }
   }
 }

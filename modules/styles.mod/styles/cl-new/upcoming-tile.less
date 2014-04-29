@@ -1,6 +1,6 @@
 .upcoming-tile {
   background: @white;
-  cursor: pointer;
+  // cursor: pointer;
   .clearfix;
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
@@ -54,16 +54,40 @@
   }
 
   .upcoming-action {
-    color: @gray3;
+    cursor: pointer;
+    color: @gray4;
 
     i {
       font-size: 24px;
     }
 
+    i.fa-times-circle {
+      font-size: 20px;
+    }
+
     .enrolled-action {
       float: right;
-      margin-top: 19px;
-      margin-right: 22px;
+      height: 61px;
+      padding: 20px;
+      border-left: 1px solid @gray5;
+
+      .hover-message {
+        font-size: 10px;
+        display: none;
+        float: left;
+        &:extend(.font-size-xs, .margin-right-l, .margin-top-s);
+      }
+
+      &:hover {
+        color: @brand-highlight;
+      }
+
+      &.enrolled {
+        cursor: default;
+        i {
+          color: @brand-highlight;
+        }
+      }
     }
 
     .enrolled-message {
@@ -71,27 +95,6 @@
       font-size: @font-size-xs;
       margin-top: 20px;
       margin-right: 10px;
-    }
-
-    .hover-message {
-      font-size: 10px;
-      display: none;
-      float: left;
-      &:extend(.font-size-xs, .margin-right-l, .margin-top-s);
-    }
-
-    .enrolled {
-      i {
-        color: @brand-highlight;
-      }
-      .hover-message {
-        display: block;
-        color: @brand-highlight;
-      }
-    }
-
-    &:hover {
-      color: @brand-highlight-hover;
     }
   }
 
@@ -161,12 +164,11 @@
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    .upcoming-action {
-      color: @brand-highlight;
+  }
 
-      .hover-message {
-        display: inline;
-      }
+  .upcoming-link:hover {
+    .upcoming-short-title {
+      color: @brand-highlight;
     }
   }
 }
