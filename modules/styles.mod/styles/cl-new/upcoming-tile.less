@@ -5,7 +5,6 @@
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
 
-
   .category-badge {
     height: 61px;
     padding: 10px 15px;
@@ -55,12 +54,13 @@
   }
 
   .upcoming-action {
-    color: @gray2;
+    color: @gray3;
+
     i {
       font-size: 24px;
     }
 
-    .enrolled-icon {
+    .enrolled-action {
       float: right;
       margin-top: 19px;
       margin-right: 22px;
@@ -71,6 +71,23 @@
       font-size: @font-size-xs;
       margin-top: 20px;
       margin-right: 10px;
+    }
+
+    .hover-message {
+      font-size: 10px;
+      display: none;
+      float: left;
+      &:extend(.font-size-xs, .margin-right-l, .margin-top-s);
+    }
+
+    .enrolled {
+      i {
+        color: @brand-highlight;
+      }
+      .hover-message {
+        display: block;
+        color: @brand-highlight;
+      }
     }
 
     &:hover {
@@ -146,6 +163,10 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     .upcoming-action {
       color: @brand-highlight;
+
+      .hover-message {
+        display: inline;
+      }
     }
   }
 }
