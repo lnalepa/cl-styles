@@ -15,7 +15,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-  // Icons
+// Remove user highlighting for icons
+i {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none; // IE10+
+       -o-user-select: none;
+          user-select: none;
+}
+
+// Icons
 
 .cl-icon-audio:before {
   content: "\f1a0";

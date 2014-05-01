@@ -1,0 +1,173 @@
+.upcoming-tile {
+  background: @white;
+  // cursor: pointer;
+  .clearfix;
+  transition: box-shadow 0.3s;
+  &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
+
+  .category-badge {
+    height: 61px;
+    padding: 10px 15px;
+    float: left;
+    color: @white;
+    &:extend(.pad-s, .font-size-xl, .text-center);
+  }
+
+  .upcoming-date {
+    width: 125px;
+    color: @other-color;
+    padding-left: 15px;
+    float: left;
+    &:extend(.pad-s);
+    .upcoming-month {
+      font-weight: 200;
+      text-transform: uppercase;
+      &:extend(.pad-top-s, .font-size-xs);
+    }
+    .upcoming-day {
+      font-weight: 500;
+      line-height: 27px;
+      &:extend(.font-size-l);
+    }
+  }
+
+  .upcoming-title {
+    color: @black;
+    width: 65%;
+    float: left;
+    &:extend(.margin-top-s, .pad-top-s);
+    .upcoming-short-title {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: 400;
+    }
+    .upcoming-instructors {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      &:extend(.font-size-xs);
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .upcoming-action {
+    cursor: pointer;
+    color: @gray4;
+
+    i {
+      font-size: 24px;
+    }
+
+    i.fa-times-circle {
+      font-size: 20px;
+    }
+
+    .enrolled-action {
+      float: right;
+      height: 61px;
+      padding: 20px;
+
+      .hover-message {
+        font-size: 10px;
+        display: none;
+        float: left;
+        &:extend(.font-size-xs, .margin-right-l, .margin-top-s);
+      }
+
+      &:hover {
+        color: @brand-highlight;
+      }
+
+      &.enrolled {
+        cursor: default;
+        i {
+          color: @brand-highlight;
+        }
+      }
+    }
+
+    .enrolled-message {
+      float: right;
+      font-size: @font-size-xs;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  // Color specifications
+  &.photography {
+    .category-badge {
+      background-color: @photo-color;
+    }
+    &:hover .category-badge {
+      background-color: @photo-color2;
+    }
+    .upcoming-date {
+      color: @photo-color;
+    }
+  }
+  &.audio {
+    .category-badge {
+      background-color: @audio-color;
+    }
+    &:hover .category-badge {
+      background-color: @audio-color2;
+    }
+    .upcoming-date {
+      color: @audio-color;
+    }
+  }
+  &.design {
+    .category-badge {
+      background-color: @design-color;
+    }
+    &:hover .category-badge {
+      background-color: @design-color2;
+    }
+    .upcoming-date {
+      color: @design-color;
+    }
+  }
+  &.maker {
+    .category-badge {
+      background-color: @maker-color;
+    }
+    &:hover .category-badge {
+      background-color: @maker-color2;
+    }
+    .upcoming-date {
+      color: @maker-color;
+    }
+  }
+  &.business {
+    .category-badge {
+      background-color: @business-color;
+    }
+    &:hover .category-badge {
+      background-color: @business-color2;
+    }
+    .upcoming-date {
+      color: @business-color;
+    }
+  }
+
+
+  .no-category-icon & {
+    .category-badge i {
+      display: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .upcoming-link:hover {
+    .upcoming-short-title {
+      color: @brand-highlight;
+    }
+  }
+}

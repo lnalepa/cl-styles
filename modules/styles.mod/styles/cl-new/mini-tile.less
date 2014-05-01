@@ -1,0 +1,68 @@
+.mini-tile-inner {
+  &:extend(.pad-m);
+  display: inline-block;
+  height: 100px;
+  color: @black;
+  background-color: @white;
+  position: relative;
+  .clearfix;
+
+  a, a:hover {
+    color: black;
+  }
+
+  .mini-tile-thumbnail {
+    float: left;
+    display: inline-block;
+  }
+
+  .mini-tile-description {
+    &:extend(.margin-left-s, .font-size-xs);
+    float: left;
+    display: inline-block;
+    width: 50%;
+    margin-left: 2%;
+    line-height: 1;
+
+    .mini-tile-title {
+      font-weight: 500;
+    }
+
+    .mini-tile-instructors {
+      color: @gray3;
+      &:extend(.font-size-xs, .list-unstyled, .margin-top-s);
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .star-button {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    font-size: 20px;
+    color: @gray4;
+    .starred-icon {
+      display: none;
+    }
+
+    .starred-message {
+      font-size: @font-size-xs;
+    }
+
+    &:hover {
+      color: @brand-highlight;
+    }
+  }
+
+  &:hover {
+    background-color: @gray6;
+    cursor: pointer;
+
+    .starred-icon {
+      display: block;
+    }
+  }
+}
