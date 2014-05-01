@@ -29,8 +29,13 @@
       width: 100%;
       transition: opacity .2s;
       .backface-visibility(hidden);
-      &:hover {
-        opacity: 0.6;
+      &:after {
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
       }
     }
 
@@ -95,29 +100,49 @@
 
     .image-container {
       position: relative;
+      background-color: black;
     }
 
     .star-button,
     .unstar-button {
       position: absolute;
-      bottom: -1px;
-      right: -1px;
-      background-color: @white;
-      color: @gray3;
-      padding: 10px;
+      bottom: 5px;
+      right: 5px;
+      color: @gray7;
+      opacity: 0;
+      transition: opacity .2s ease-in;
       i {
         font-size: @font-size-l;
-      }
-      &:hover {
-        color: @brand-highlight;
       }
     }
 
     .unstar-button {
       cursor: default;
       i {
-        color: @brand-highlight;
+        color: @white;
       }
+    }
+
+    .tooltip {
+      background: none;
+      .tooltip-inner {
+        background: none;
+      }
+      .tooltip-arrow {
+        border: 0;
+      }
+    }
+  }
+
+
+  &:hover {
+    img {
+      opacity: 0.6;
+    }
+
+    .star-button,
+    .unstar-button {
+      opacity: 1;
     }
   }
 }
