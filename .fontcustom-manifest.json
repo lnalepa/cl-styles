@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "e03f249220226e43d17a190c1f481bba864c1b5ddb574dc9cdeb509362cc228b",
-    "current": "e03f249220226e43d17a190c1f481bba864c1b5ddb574dc9cdeb509362cc228b"
+    "previous": "13da91c779b78e5083d7e111e14edaec40b1ab4b0a8b48d188a1be5eb18a8d85",
+    "current": "13da91c779b78e5083d7e111e14edaec40b1ab4b0a8b48d188a1be5eb18a8d85"
   },
   "fonts": [
     "modules/styles.mod/assets/font/cl-font-collection.ttf",
@@ -10,6 +10,14 @@
     "modules/styles.mod/assets/font/cl-font-collection.eot"
   ],
   "glyphs": {
+    "arrows-left": {
+      "codepoint": 61894,
+      "source": "modules/styles.mod/assets/icons/arrows-left.svg"
+    },
+    "arrows-right": {
+      "codepoint": 61895,
+      "source": "modules/styles.mod/assets/icons/arrows-right.svg"
+    },
     "audio": {
       "codepoint": 61856,
       "source": "modules/styles.mod/assets/icons/audio.svg"
@@ -82,6 +90,10 @@
       "codepoint": 61882,
       "source": "modules/styles.mod/assets/icons/clock.svg"
     },
+    "cloud": {
+      "codepoint": 61896,
+      "source": "modules/styles.mod/assets/icons/cloud.svg"
+    },
     "design": {
       "codepoint": 61883,
       "source": "modules/styles.mod/assets/icons/design.svg"
@@ -93,6 +105,10 @@
     "five-tabs": {
       "codepoint": 61885,
       "source": "modules/styles.mod/assets/icons/five-tabs.svg"
+    },
+    "grid": {
+      "codepoint": 61897,
+      "source": "modules/styles.mod/assets/icons/grid.svg"
     },
     "holy-canvas": {
       "codepoint": 61867,
