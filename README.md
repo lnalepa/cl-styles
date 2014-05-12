@@ -24,7 +24,7 @@ This should output a bunch of webfonts into `modules/styles.mod/assets/font`, as
 
 These files may be outputted as `cl-font-collection.*`, please rename it to `cl-font-collection(i+1).*`. 
 
-Add your css rule to `icons.less`, update the version of `cl-font-collection` and voila!
+Add your css rule to `icons.less` by picking up the unicode for your new character in the `fontcustom-manifest` file, update the version of `cl-font-collection` and voila!
 
 
 ### Running Tests
