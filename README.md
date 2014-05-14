@@ -20,7 +20,11 @@ Add a .svg to the `modules/styles.mod/assets/icons` folder and then execute:
 fontcustom compile
 ````
 
-This should output a bunch of webfonts into `modules/styles.mod/assets/font`, as well as some templated css/html into an ignored folder. Add your css rule to `icons.less` and voila!
+This should output a bunch of webfonts into `modules/styles.mod/assets/font`, as well as some templated css/html into an ignored folder. 
+
+These files may be outputted as `cl-font-collection.*`, please rename it to `cl-font-collection(i+1).*`. 
+
+Add your css rule to `icons.less` by picking up the unicode for your new character in the `.fontcustom-manifest.json` file, update the version of `cl-font-collection` and voila!
 
 
 ### Running Tests
