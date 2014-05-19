@@ -1,0 +1,25 @@
+.play-icon {
+  color: rgba(0,153,255,.75);
+  font-size: 2.75em;
+  text-align: center;
+  position: absolute;
+  padding: .62em .72em;
+  &:after {
+    content: "\f04b";
+    left: .1em;
+    top: .03em;
+    position: relative;
+  }
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 100%;
+    height: 100%;
+    border: 0;
+    background-color: rgba(255,255,255,.7);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.5);
+    content: '' !important;
+  }
+}
