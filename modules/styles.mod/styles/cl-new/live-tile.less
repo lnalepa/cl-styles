@@ -1,0 +1,75 @@
+.live-tile {
+  color: @black;
+  height: 360px;
+  &:extend(.margin-top-s);
+
+  .live-course-image {
+    position: relative;
+  }
+
+  .live-now-ribbon {
+    top: 5px;
+    left: -8px;
+    font-size: 12px;
+    border: 1px solid @gray3;
+    height: auto;
+    &:before {
+      bottom: -0.75em;
+    }
+  }
+
+  .play-icon-position {
+    top: 50%;
+    margin-top: -43px;
+    left: 50%;
+    margin-left: -43px;
+  }
+
+  .live-tile-info {
+    background: @gray0;
+    color: @white;
+    min-height: 153px;
+    border-top: 10px solid @other-color;
+    line-height: 22px;
+    &:extend(.pad-top-xl, .pad-bottom-xl, .pad-right-l, .pad-left-l);
+
+    &.photography {
+      border-top: 10px solid @photo-color;
+    }
+    &.audio {
+      border-top: 10px solid @audio-color;
+    }
+    &.design {
+      border-top: 10px solid @design-color;
+    }
+    &.craft {
+      border-top: 10px solid @craft-color;
+    }
+    &.business {
+      border-top: 10px solid @business-color;
+    }
+
+    .live-tile-title {
+      &:extend(.font-size-m);
+    }
+    .live-tile-instructors {
+      &:extend(.font-size-xs, .margin-top-s);
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .live-dates {
+    background-color: @white;
+    text-align: center;
+    font-weight: 500;
+    &:extend(.pad-s);
+  }
+
+  &:hover {
+    .play-icon:before {
+      background-color: rgba(255,255,255,.9);
+    }
+  }
+}
