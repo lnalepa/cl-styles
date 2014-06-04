@@ -58,7 +58,11 @@
     }
   }
 
-  .btn-lg {
+  &.btn-block {
+    width: 100%;
+  }
+
+  &.btn-lg {
     padding: 15px;
     line-height: @font-size-l;
     font-size: @font-size-l;
@@ -76,23 +80,4 @@
     font-size: @font-size-xs;
   }
 
-  // Special Buttons
-  &.btn-facebook-login {
-    font-family: @font-family-primary;
-    .border-top-radius(5px);
-    .border-bottom-radius(5px);
-    display: block;
-    background-color: #4c69b9;
-    color: white;
-    padding: 5px 5px 5px 15px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    div {
-      font-weight: 300;
-    }
-    .icon-facebook-sign {
-      font-size: @font-size-xl;
-      margin-top: 0;
-    }
-  }
 }
