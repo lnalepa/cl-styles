@@ -3,32 +3,32 @@
 .cl-new .btn {
   font-family: @font-family-brand;
   font-weight: @font-weight-medium;
-
+  font-size: 16px;
   border-radius: 0;
   border: none;
-  width: 100%;
+  width: auto;
   height: auto;
   margin: 0;
+  padding: 10px;
   white-space: normal;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 22px;
+  box-shadow: none;
 
   &.btn-primary {
     background-color: @brand-highlight;
-    padding: 10px;
+
     color: @white;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 22px;
-    box-shadow: none;
     &:hover {
       background-color: @brand-highlight-hover;
       color: @white;
     }
   }
 
+  &.btn-default,
   &.btn-dull {
     background-color: @gray3;
-    padding: 3px 10px 3px 10px;
     color: white;
 
     &:hover {
@@ -48,7 +48,6 @@
 
 
   &.btn-short {
-    background-color: @brand-highlight;
     padding: 3px 10px 3px 10px;
     color: white;
     text-transform: uppercase;
@@ -59,9 +58,41 @@
     }
   }
 
+  .btn-lg {
+    padding: 15px;
+    line-height: @font-size-l;
+    font-size: @font-size-l;
+  }
+
+  &.btn-sm {
+    padding: 9px;
+    line-height: @font-size-s;
+    font-size: @font-size-s;
+  }
+
   &.btn-xs {
     padding: 6px;
     line-height: @font-size-xs;
     font-size: @font-size-xs;
+  }
+
+  // Special Buttons
+  &.btn-facebook-login {
+    font-family: @font-family-primary;
+    .border-top-radius(5px);
+    .border-bottom-radius(5px);
+    display: block;
+    background-color: #4c69b9;
+    color: white;
+    padding: 5px 5px 5px 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    div {
+      font-weight: 300;
+    }
+    .icon-facebook-sign {
+      font-size: @font-size-xl;
+      margin-top: 0;
+    }
   }
 }
