@@ -3,33 +3,33 @@
 .cl-new .btn {
   font-family: @font-family-brand;
   font-weight: @font-weight-medium;
-
+  font-size: 16px;
   border-radius: 0;
   border: none;
-  width: 100%;
+  width: auto;
   height: auto;
   margin: 0;
+  padding: 10px;
   white-space: normal;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 22px;
+  box-shadow: none;
 
   &.btn-primary {
     background-color: @brand-highlight;
-    padding: 10px;
+
     color: @white;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 22px;
-    box-shadow: none;
     &:hover {
       background-color: @brand-highlight-hover;
       color: @white;
     }
   }
 
+  &.btn-default,
   &.btn-dull {
     background-color: @gray3;
-    padding: 3px 10px 3px 10px;
-    color: white;
+    color: @white;
 
     &:hover {
       background-color: @gray3-hover;
@@ -46,22 +46,63 @@
     }
   }
 
-
   &.btn-short {
-    background-color: @brand-highlight;
     padding: 3px 10px 3px 10px;
-    color: white;
-    text-transform: uppercase;
-    width: auto;
+    line-height: @font-size-s;
+    font-size: @font-size-s;
+  }
 
-    &:hover {
-      background-color: @brand-highlight-hover;
-    }
+  &.btn-block {
+    width: 100%;
+  }
+
+  &.btn-lg {
+    padding: 15px;
+    line-height: @font-size-l;
+    font-size: @font-size-l;
+  }
+
+  &.btn-md {
+    padding: 10px;
+  }
+
+  &.btn-sm {
+    padding: 10px;
+    line-height: @font-size-s;
+    font-size: @font-size-s;
   }
 
   &.btn-xs {
     padding: 6px;
     line-height: @font-size-xs;
     font-size: @font-size-xs;
+  }
+
+  &.btn-facebook-login {
+    height: 45px;
+    font-size: 16px;
+    padding: 0px;
+
+    .login-text {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 13px;
+
+      @media screen and (max-width: @screen-xs-max) {
+        margin-top: 2px;
+      }
+    }
+
+    .fa-facebook-square {
+      font-size: 20px;
+    }
+
+    .fb-button-icon {
+      &:extend(.pull-left, .margin-top-none);
+      width: 45px;
+      height: 45px;
+      line-height: 49px;
+      background-color: #4C60A8;
+    }
   }
 }
