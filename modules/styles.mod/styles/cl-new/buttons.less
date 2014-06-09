@@ -29,7 +29,7 @@
   &.btn-default,
   &.btn-dull {
     background-color: @gray3;
-    color: white;
+    color: @white;
 
     &:hover {
       background-color: @gray3-hover;
@@ -49,13 +49,8 @@
 
   &.btn-short {
     padding: 3px 10px 3px 10px;
-    color: white;
-    text-transform: uppercase;
-    width: auto;
-
-    &:hover {
-      background-color: @brand-highlight-hover;
-    }
+    line-height: @font-size-s;
+    font-size: @font-size-s;
   }
 
   &.btn-block {
@@ -69,7 +64,7 @@
   }
 
   &.btn-sm {
-    padding: 9px;
+    padding: 10px;
     line-height: @font-size-s;
     font-size: @font-size-s;
   }
