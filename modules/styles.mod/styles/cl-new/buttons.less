@@ -26,10 +26,11 @@
     }
   }
 
-  &.btn-dull {
+  &.btn-dull,
+  &.btn-default {
     background-color: @gray3;
-    padding: 3px 10px 3px 10px;
-    color: white;
+    padding: 3px 10px;
+    color: @white;
 
     &:hover {
       background-color: @gray3-hover;
@@ -49,7 +50,7 @@
 
   &.btn-short {
     background-color: @brand-highlight;
-    padding: 3px 10px 3px 10px;
+    padding: 3px 10px;
     color: white;
     text-transform: uppercase;
     width: auto;
