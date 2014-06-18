@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "13da91c779b78e5083d7e111e14edaec40b1ab4b0a8b48d188a1be5eb18a8d85",
-    "current": "13da91c779b78e5083d7e111e14edaec40b1ab4b0a8b48d188a1be5eb18a8d85"
+    "previous": "1f291c6bb5434327588437b2d610f9c61a419b642009bd5245bc2d106de77a43",
+    "current": "1f291c6bb5434327588437b2d610f9c61a419b642009bd5245bc2d106de77a43"
   },
   "fonts": [
     "modules/styles.mod/assets/font/cl-font-collection.ttf",
@@ -10,6 +10,18 @@
     "modules/styles.mod/assets/font/cl-font-collection.eot"
   ],
   "glyphs": {
+    "Chat_Icon": {
+      "codepoint": 61898,
+      "source": "modules/styles.mod/assets/icons/Chat_Icon.svg"
+    },
+    "Media_Icon": {
+      "codepoint": 61899,
+      "source": "modules/styles.mod/assets/icons/Media_Icon.svg"
+    },
+    "Questions_Icon": {
+      "codepoint": 61900,
+      "source": "modules/styles.mod/assets/icons/Questions_Icon.svg"
+    },
     "arrows-left": {
       "codepoint": 61894,
       "source": "modules/styles.mod/assets/icons/arrows-left.svg"
