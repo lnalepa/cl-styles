@@ -4,6 +4,9 @@
   .clearfix;
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
+  @media screen and (max-width: @screen-xs-max) {
+    margin: 0 0 10px;
+  }
 
   .category-badge {
     height: 61px;
@@ -11,14 +14,28 @@
     float: left;
     color: @white;
     &:extend(.pad-s, .font-size-xl, .text-center);
+
+    @media screen and (max-width: @screen-xs-max) {
+      height: 98px;
+      padding: 0 5px;
+      i {
+        display: none;
+      }
+    }
   }
 
   .upcoming-date {
-    width: 125px;
     color: @other-color;
-    padding-left: 15px;
-    float: left;
-    &:extend(.pad-s);
+    @media screen and (min-width: @screen-tablet) {
+      float: left;
+      width: 125px;
+      padding: 5px 5px 5px 15px;
+    }
+    @media screen and (max-width: @screen-xs-max) {
+      float: left;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
     .upcoming-month {
       font-weight: 200;
       text-transform: uppercase;
@@ -33,9 +50,16 @@
 
   .upcoming-title {
     color: @black;
-    width: 65%;
-    float: left;
-    &:extend(.margin-top-s, .pad-top-s);
+    @media screen and (min-width: @screen-tablet) {
+      width: 65%;
+      float: left;
+      margin-top: 5px;
+      padding-top: 5px;
+    }
+    @media screen and (max-width: @screen-xs-max) {
+      overflow: hidden;
+      padding: 10px;
+    }
     .upcoming-short-title {
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -67,8 +91,12 @@
 
     .enrolled-action {
       float: right;
-      height: 61px;
-      padding: 20px;
+      margin: 10px 10px 0 0;
+      padding: 10px;
+
+      @media screen and (max-width: @screen-xs-max) {
+        margin: -10px 0 0 -10px;
+      }
 
       .hover-message {
         font-size: 10px;
