@@ -1,26 +1,42 @@
 // Colors
-@brand-primary:         #aed104;
-@brand-secondary:       #1A70D9;
-@brand-warning:         #e02a00;
-@brand-info:            #5bc0de;
+@brand-highlight: #0099FF;
+@brand-affirmative: #159867;
 
-@brand-info-secondary:  #64cdff;
+@brand-highlight-hover:   lighten(@brand-highlight, 10%);
+@brand-affirmative-hover:   lighten(@brand-affirmative, 10%);
 
-@gray-lightest:         #e8e8e8;
-@gray-lighter:          #d1d1d1;
-@gray-light:            #818387;
-@gray:                  #6a6a6a;
-@gray-dark:             #2b2d2f;
+@brand-info: @brand-highlight-hover;
+@brand-info-hover:   lighten(@brand-info, 10%);
 
-@white:                 #fff;
-@almost-white:          #f5f5f5;
-@black:                 #000;
-@almost-black:          #111;
+@gray0: #333333;
+@gray1: #4E4E4E;
+@gray2: #666666;
+@gray3: #A4A4A4;
+@gray4: #C1C1C1;
+@gray5: #D9D9D9;
+@gray6: #E6E6E6;
+@gray7: #F1F1F1;
+@black: black;
+@white: white;
 
-@brand-primary-hover:   lighten(@brand-primary, 1%);
-@brand-secondary-hover: lighten(@brand-secondary, 5%);
-@brand-warning-hover:   lighten(@brand-warning, 5%);
-@brand-info-hover:      lighten(@brand-info, 5%);
+@gray0-hover:   lighten(@gray0, 10%);
+@gray1-hover:   lighten(@gray1, 10%);
+@gray2-hover:   lighten(@gray2, 10%);
+@gray3-hover:   lighten(@gray3, 10%);
+@gray4-hover:   lighten(@gray4, 10%);
+@gray5-hover:   lighten(@gray5, 10%);
+@gray6-hover:   lighten(@gray6, 10%);
+@gray7-hover:   lighten(@gray7, 10%);
+
+// category specific colors
+
+@photography-color:   #193b4c;
+@photo-color:         @photography-color; // Deprecated, use @photography-color
+@design-color:        #b11b56;
+@audio-color:         #df7915;
+@craft-color:         #1f9b97;
+@business-color:      #619020;
+@other-color:         #4a4d5b;
 
 @photography-color-dark: #193B4C;
 @photography-color-light: #1e4c60;
@@ -45,3 +61,90 @@
 @other-color-dark: #4a4d5b;
 @other-color-light: #73757d;
 @other-color-lighter: #6a6a6a;
+
+// category specific colors lighter version
+@photo-color2:         #387189;
+@design-color2:        #dd578d;
+@audio-color2:         #ea9037;
+@craft-color2:         #3dc2c1;
+@business-color2:      #8fba3c;
+@other-color2:         #73757d;
+
+@alert-info-text: #00a0fe;
+@alert-info-bg: #e5f2ff;
+@alert-info-close: #c0e2ff;
+
+@brand-warning:        #e02a00;
+
+.brand-highlight {
+  color: @brand-highlight;
+}
+
+.brand-affirmative {
+  color: @brand-affirmative;
+}
+
+.gray0 {
+  color: @gray0;
+}
+.gray1 {
+  color: @gray1;
+}
+.gray2 {
+  color: @gray2;
+}
+.gray3 {
+  color: @gray3;
+}
+.gray4 {
+  color: @gray4;
+}
+.gray5 {
+  color: @gray5;
+}
+.gray6 {
+  color: @gray6;
+}
+.gray7 {
+  color: @gray7;
+}
+.black {
+  color: @black;
+}
+.white {
+  color: @white;
+}
+
+
+
+.vertical-bg-photography {
+  background-color: @photography-color;
+}
+.vertical-bg-design {
+  background-color: @design-color;
+}
+.vertical-bg-audio {
+  background-color: @audio-color;
+}
+.vertical-bg-craft {
+  background-color: @craft-color;
+}
+.vertical-bg-business {
+  background-color: @business-color;
+}
+
+.vertical-bd-photography {
+  border-color: @photography-color;
+}
+.vertical-bd-design {
+  border-color: @design-color;
+}
+.vertical-bd-audio {
+  border-color: @audio-color;
+}
+.vertical-bd-craft {
+  border-color: @craft-color;
+}
+.vertical-bd-business {
+  border-color: @business-color;
+}

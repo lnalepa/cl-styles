@@ -1,14 +1,19 @@
 // Links
-
-@link-color: darken(@brand-info, 20%);
-@link-hover-color: @brand-info-hover;
-
 a {
-  
-  cursor: pointer;
-  
+  color: @brand-highlight;
+
   &:hover {
     text-decoration: none;
-    color: @link-hover-color;
+    color: @brand-highlight-hover;
+    cursor: pointer;
   }
+}
+
+a.black {
+  color: @black;
+}
+
+a.anchor, a.anchor:hover {
+  color: @black;
+  cursor: default;
 }
