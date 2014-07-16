@@ -1,6 +1,8 @@
 // Typography
-
+@font-family-brand: 'Gotham SSm A', 'Gotham SSm B', Helvetica;
+@font-family-cursive: 'Sacramento', cursive;
 @font-family-primary: "Helvetica Neue", Helvetica, Arial, 'Lucida Grande', sans-serif;
+@font-family-icon: "cl-font-collection";
 
 @font-size-xxl:           38px;
 @font-size-xl:            30px;
@@ -13,8 +15,139 @@
 @font-weight-medium:      400;
 @font-weight-light:       200;
 
-.font-family-primary {
-  font-family: @font-family-primary;
+body{
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  color: @black;
+}
+
+h1 {
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 35px;
+  color: @black;
+  letter-spacing: -1px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-family: @font-family-brand;
+  font-weight: 200;
+  font-style: normal;
+  font-size: @font-size-xl;
+  letter-spacing: 0px;
+  text-transform: lowercase;
+  margin-top: 0;
+  color: @gray3;
+}
+
+h3 {
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  font-size: @font-size-l;
+  color: @black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+h4 {
+  font-family: @font-family-brand;
+  font-weight: 500;
+  font-style: normal;
+  font-size: @font-size-m;
+  color: @black;
+  letter-spacing: 0px;
+}
+
+h5 {
+  font-family: @font-family-brand;
+  font-style: normal;
+  color: @black;
+  letter-spacing: 0px;
+}
+
+p {
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  font-size: @font-size-s;
+  letter-spacing: 0px;
+}
+
+div {
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+
+.info1 {
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  font-size: @font-size-l;
+  color: @black;
+  letter-spacing: 0px;
+  line-height: 28px;
+}
+
+.info2 {
+  font-family: @font-family-brand;
+  font-weight: 400;
+  font-style: normal;
+  font-size: @font-size-m;
+  color: @black;
+  letter-spacing: 0px;
+}
+
+.cta {
+  font-family: @font-family-brand;
+  font-weight: 500;
+  font-style: normal;
+  font-size: @font-size-m;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.cta2 {
+  font-family: @font-family-brand;
+  font-weight: 500;
+  font-style: normal;
+  font-size: @font-size-xs;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.smalltext {
+  font-family: @font-family-brand;
+  font-weight: 500;
+  font-style: normal;
+  font-size: @font-size-xs;
+  color: @black;
+  letter-spacing: 1px;
+}
+
+.tinytext {
+  font-family: @font-family-brand;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  color: @black;
+  letter-spacing: 0px;
+  line-height: 28px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
 
 .font-size-xxl {
@@ -53,50 +186,8 @@
   font-weight: 300;
 }
 
-.brand-primary {
-  color: @brand-primary;
-}
+// Import Gotham Font
+@import url(//cloud.typography.com/7354872/708964/css/fonts.css);
 
-.brand-info {
-  color: @brand-info;
-}
-
-.brand-info-secondary {
-  color: @brand-info-secondary;
-}
-
-.brand-warning {
-  color: @brand-warning;
-}
-
-.gray-lightest {
-  color: @gray-lightest;
-}
-
-.gray-lighter {
-  color: @gray-lighter;
-}
-
-.gray-light {
-  color: @gray-light;
-}
-
-.gray {
-  color: @gray;
-}
-
-.gray-dark {
-  color: @gray-dark;
-}
-
-.black {
-  color: @black;
-}
-
-.white {
-  color: @white;
-}
-
-.line-through {
-  text-decoration: line-through;
-}
+// Import Sacramento Font.
+@import url(//fonts.googleapis.com/css?family=Sacramento);

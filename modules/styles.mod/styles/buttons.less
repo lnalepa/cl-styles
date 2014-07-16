@@ -1,142 +1,126 @@
 // Buttons
+
 .btn {
-
-  font-family: @font-family-primary;
+  font-family: @font-family-brand;
   font-weight: @font-weight-medium;
-
+  font-size: 16px;
+  border-radius: 0;
   border: none;
-  // Buttons Options
-  &.btn-cta {
-    background-color: @brand-info;
-    #gradient .vertical(@brand-info-secondary,  @brand-info, 0%, 100%);
-    color: @white;
-  }
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  white-space: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 22px;
+  box-shadow: none;
 
   &.btn-primary {
+    background-color: @brand-highlight;
+
+    color: @white;
+    &:hover {
+      background-color: @brand-highlight-hover;
+      color: @white;
+    }
+  }
+
+  &.btn-default,
+  &.btn-dull {
+    background-color: @gray3;
+    color: @white;
+
+    &:hover {
+      background-color: @gray3-hover;
+    }
+  }
+
+  &.btn-dark {
+    background-color: @gray0;
+    color: @white;
+
+    &:hover {
+      background-color: @gray0-hover;
+      color: @white;
+    }
+  }
+
+  &.btn-short {
+    padding: 3px 10px;
+    line-height: @font-size-s;
+    font-size: @font-size-s;
+  }
+
+  &.btn-block {
+    width: 100%;
+  }
+
+  &.btn-lg {
+    padding: 15px;
+    line-height: @font-size-l;
     font-size: @font-size-l;
-    width: 110px;
-    height: 40px;
-    text-align: center;
-    margin: 2px 0 0 10px;
-    background: @brand-primary;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-    color: @white;
-    font-weight: @font-weight-light;
-    font-family: @font-family-primary;
-    line-height: 30px;
-    &:extend(.pad-s);
-
-    &:hover {
-      background-color: @brand-primary-hover;
-    }
   }
 
-  &.btn-white {
-    background-color: @white;
-    font-family: @font-family-primary;
-    color: @brand-primary;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px;
-    white-space: normal;
-    border-radius: 3px;
-    padding: 3px 10px;
-
-    &:hover {
-      color: @brand-primary !important;
-    }
+  &.btn-md {
+    padding: 10px;
   }
 
-  &.btn-green {
-    background-color: @brand-primary;
-    color: @white;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px;
-    white-space: normal;
-    border-radius: 3px;
-    padding: 3px 10px;
-
-    &:hover {
-      color: @white !important;
-    }
+  &.btn-sm {
+    padding: 7px;
+    line-height: @font-size-s;
+    font-size: @font-size-s;
   }
 
-  &.btn-gray {
-    background-color: @gray-lighter;
-    color: @gray;
-    white-space: normal;
-    border-radius: 3px;
-    padding: 6px 10px;
-
-    &:hover {
-      color: @almost-black !important;
-    }
+  &.btn-xs {
+    padding: 6px;
+    line-height: @font-size-xs;
+    font-size: @font-size-xs;
   }
 
-  &.btn-rebroadcast {
-    #gradient .vertical(@gray-light, @gray-dark, 0%, 100%);
-    color: @white;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px;
-    white-space: normal;
-    border-radius: 3px;
-    border: 2px solid @brand-primary;
-  }
-
-  &.btn-large {
-    padding: 20px 16px;
-    font-size: @font-size-m;
-    white-space: normal;
-    border-radius: 3px;
-  }
-
-  &.btn-disabled {
-    cursor: default;
-    background-color: #B0B0B0;
+  &.btn-facebook-login {
+    height: 45px;
+    font-size: 16px;
+    padding: 0px;
+    background-color: #4c69b9;
     color: white;
+    white-space: nowrap;
+
+    .login-text {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 13px;
+
+      @media screen and (max-width: @screen-xs-max) {
+        margin-top: 12px;
+        font-size: @font-size-s;
+      }
+    }
+
+    .fa-facebook-square {
+      font-size: 20px;
+    }
+
+    .fb-button-icon {
+      &:extend(.pull-left, .margin-top-none);
+      width: 45px;
+      height: 45px;
+      line-height: 49px;
+      background-color: #4C60A8;
+    }
   }
 
-  &.btn-old {
+  &.btn-admin {
     border-radius: 0;
-    background-color: @gray-dark;
+    background-color: @gray0;
     color: @white;
     font-size: @font-size-xs;
-    font-family: @font-family-primary;
+    font-family: @font-family-brand;
     &:hover,
     &:active,
     &.active, {
-      background-color: @brand-primary;
+      background-color: @brand-highlight;
       color: @black;
     }
   }
-
-  // Special Buttons
-  &.btn-facebook-login {
-    font-family: @font-family-primary;
-    .border-top-radius(5px);
-    .border-bottom-radius(5px);
-    display: block;
-    background-color: #4c69b9;
-    color: white;
-    padding: 5px 5px 5px 15px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    div {
-      font-weight: 300;
-    }
-    .icon-facebook-sign {
-      font-size: @font-size-xl;
-      margin-top: 0;
-    }
-  }
-
-  // Button Psudeo
-  &:hover {
-    background-image: none;
-  };
-
-  &:active {
-    background-image: none;
-    .box-shadow(none);
-  };
 }
-
-@btn-primary-bg: @brand-info;
-@btn-default-bg: @gray;
-@btn-success-bg: @brand-primary;
