@@ -1,6 +1,5 @@
 .upcoming-tile {
   background: @white;
-  // cursor: pointer;
   .clearfix;
   transition: box-shadow 0.3s;
   &:extend(.margin-bottom-s, .margin-right-s, .font-size-m);
@@ -81,8 +80,8 @@
     cursor: pointer;
     color: @gray4;
 
-    i {
-      font-size: 24px;
+    span {
+      font-size: 13px;
     }
 
     i.fa-times-circle {
@@ -103,10 +102,6 @@
         display: none;
         float: left;
         &:extend(.font-size-xs, .margin-right-l, .margin-top-s);
-      }
-
-      &:hover {
-        color: @brand-highlight;
       }
 
       &.enrolled {
