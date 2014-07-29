@@ -5,15 +5,24 @@
     position: relative;
     background-color: @gray6;
     &:extend(.font-size-xs, .font-primary, .font-weight-regular);
-    
-    .upcoming-ribbon {
-      background-color: @gray2;
-      color: @white;
+
+    .course-tile-ribbon {
+      height: 22px;
       padding: 5px 8px 0;
       z-index: 1;
       &:before {
         left: 0;
       }
+    }
+
+    .upcoming-ribbon {
+      background-color: @gray2;
+      color: @white;
+    }
+
+    .sale-ribbon {
+      background-color: @brand-highlight;
+      color: @white;
     }
 
     a, a:hover {
@@ -30,7 +39,7 @@
       box-shadow: none;
       color: @white;
     }
-    
+
     img {
       width: 100%;
       transition: opacity .2s;
@@ -125,7 +134,7 @@
     }
 
     .action-button, .star-button, .unstar-button {
-      cursor: default;
+      cursor: pointer;
       i {
         color: @white;
       }
