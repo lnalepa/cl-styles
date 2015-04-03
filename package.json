@@ -1,8 +1,7 @@
 {
   "name": "cl-styles.rind",
   "description": "creativeLIVE styles",
-  "version": "0.0.42",
-  "private": true,
+  "version": "0.0.43",
   "repository": {
     "type": "git",
     "url": "http://github.com/creativelive/cl-styles.git"
@@ -14,5 +13,8 @@
     "grunt": "~0.4.4",
     "grunt-lesslint": "~1.0.0",
     "grunt-cli": "~0.1.13"
+  },
+  "publishConfig": {
+    "registry": "http://npm.creativelive.com:8080"
   }
 }
